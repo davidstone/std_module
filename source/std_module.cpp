@@ -124,6 +124,7 @@ export using std::is_empty_v;
 export using std::is_function_v;
 export using std::is_move_assignable_v;
 export using std::is_move_constructible_v;
+export using std::is_nothrow_constructible_v;
 export using std::is_nothrow_copy_constructible_v;
 export using std::is_nothrow_copy_assignable_v;
 export using std::is_nothrow_destructible_v;
