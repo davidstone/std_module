@@ -193,6 +193,7 @@ export using std::to_underlying;
 export using std::unique_ptr;
 export using std::unreachable;
 
+export using std::bad_alloc;
 export using std::exception;
 export using std::invalid_argument;
 export using std::length_error;
