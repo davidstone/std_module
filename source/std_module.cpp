@@ -247,12 +247,15 @@ export using std::to_string;
 export using std::compare_three_way;
 export using std::inplace_merge;
 export using std::iota;
+export using std::make_heap;
 export using std::memcpy;
 export using std::mismatch;
 export using std::reverse;
+export using std::rotate;
 export using std::search;
 export using std::shuffle;
 export using std::sort;
+export using std::sort_heap;
 
 namespace ranges {
 
@@ -295,13 +298,17 @@ export using std::uniform_real_distribution;
 export using std::atomic;
 export using std::atomic_flag;
 export using std::condition_variable_any;
+#ifndef _LIBCPP_VERSION
 export using std::jthread;
+#endif
 export using std::memory_order;
 export using std::mutex;
 export using std::unique_lock;
 export using std::scoped_lock;
+#ifndef _LIBCPP_VERSION
 export using std::stop_token;
 export using std::try_to_lock;
+#endif
 
 namespace this_thread {
 
