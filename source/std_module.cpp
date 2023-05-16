@@ -8,7 +8,11 @@ module;
 // There are several clang bugs in including standard library headers. Do this
 // to work around them and improve compile times until we get `import std;`
 
-#include <compare>
+#include <std_module/prelude.hpp>
+
+#include <cmath>
+#include <cstdlib>
+#include <cstring>
 
 #include <array>
 #include <deque>
@@ -18,16 +22,10 @@ module;
 #include <vector>
 
 #include <algorithm>
-#include <atomic>
 #include <bit>
 #include <chrono>
-#include <cmath>
 #include <concepts>
 #include <condition_variable>
-#include <cstddef>
-#include <cstdint>
-#include <cstdlib>
-#include <cstring>
 #include <filesystem>
 #include <fstream>
 #include <functional>
@@ -233,9 +231,9 @@ export using std::unordered_multiset;
 export using std::vector;
 
 inline namespace literals {
-inline namespace string_view_literals {
+export inline namespace string_view_literals {
 
-export using std::literals::string_view_literals::operator""sv;
+using std::literals::string_view_literals::operator""sv;
 
 } // namespace string_view_literals
 } // namespace literals

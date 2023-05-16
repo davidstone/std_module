@@ -1,2 +1,3 @@
 # std_module
-A module for all my uses of the standard library, until `import std;` works
+
+A module for all my uses of the standard library, until `import std;` works. Due to clang bugs, any file that includes any standard header (even indirectly) must first `#include <std_module/prelude.hpp>` first. Certain standard headers need to be included in a certain order to ensure the current modules implementation believes function bodies haven't changed, and this ensures that. Moreover, some operators have been defined in such a way that certain things still require `#include` -- for instance, comparing `std::string_view`.
