@@ -230,6 +230,9 @@ export using std::unordered_set;
 export using std::unordered_multiset;
 export using std::vector;
 
+export using std::as_bytes;
+export using std::as_writable_bytes;
+
 inline namespace literals {
 export inline namespace string_view_literals {
 
