@@ -9,7 +9,7 @@ project(std_module LANGUAGES CXX)
 
 get_directory_property(has_parent PARENT_DIRECTORY)
 if (NOT has_parent)
-	set(CMAKE_CXX_STANDARD 23)
+	set(CMAKE_CXX_STANDARD 26)
 	set(CMAKE_CXX_STANDARD_REQUIRED On)
 	set(CMAKE_CXX_EXTENSIONS Off)
 
