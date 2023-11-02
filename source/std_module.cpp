@@ -185,6 +185,7 @@ export using std::max;
 export using std::monostate;
 export using std::numeric_limits;
 export using std::nullptr_t;
+export using std::ref;
 export using std::reference_wrapper;
 export using std::round_toward_zero;
 export using std::to_underlying;
