@@ -79,6 +79,7 @@ export using std::plus;
 export using std::not_fn;
 
 export using std::equal_to;
+export using std::not_equal_to;
 export using std::greater;
 export using std::greater_equal;
 export using std::less;
