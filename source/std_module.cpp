@@ -216,6 +216,8 @@ export using std::make_reverse_iterator;
 export using std::allocator;
 
 export using std::array;
+export using std::basic_string;
+export using std::basic_string_view;
 export using std::deque;
 export using std::forward_list;
 export using std::initializer_list;
