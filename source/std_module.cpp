@@ -265,6 +265,7 @@ export using std::sort_heap;
 
 namespace ranges {
 
+export using std::ranges::data;
 export using std::ranges::swap;
 
 } // namespace ranges
