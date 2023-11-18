@@ -8,4 +8,4 @@ on:
 
 jobs:
   build:
-    uses: davidstone/cmake_strict_defaults/.github/workflows/build-and-test.yml@latest
+    uses: davidstone/cmake_strict_defaults/.github/workflows/build-and-test.yml@main
