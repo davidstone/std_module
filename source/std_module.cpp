@@ -202,6 +202,8 @@ export using std::range_error;
 export using std::runtime_error;
 export using std::out_of_range;
 
+export using std::uncaught_exceptions;
+
 export using std::begin;
 export using std::end;
 
