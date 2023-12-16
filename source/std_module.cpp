@@ -318,8 +318,8 @@ export using std::unique_lock;
 export using std::scoped_lock;
 #ifndef _LIBCPP_VERSION
 export using std::stop_token;
-export using std::try_to_lock;
 #endif
+export using std::try_to_lock;
 
 namespace this_thread {
 
