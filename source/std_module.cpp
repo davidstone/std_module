@@ -367,6 +367,8 @@ export using std::locale;
 export using std::operator+;
 export using std::operator-;
 export using std::operator|;
+export using std::operator<<;
+export using std::operator>>;
 
 } // namespace std
 
@@ -374,6 +376,7 @@ export using std::operator|;
 namespace __gnu_cxx {
 
 export using __gnu_cxx::operator-;
+export using __gnu_cxx::operator==;
 
 } // namespace __gnu_cxx
 
