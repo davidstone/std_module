@@ -26,6 +26,7 @@ module;
 #include <chrono>
 #include <concepts>
 #include <condition_variable>
+#include <execution>
 #include <filesystem>
 #include <fstream>
 #include <functional>
@@ -35,6 +36,7 @@ module;
 #include <map>
 #include <memory>
 #include <mutex>
+#include <numeric>
 #include <random>
 #include <ranges>
 #include <set>
@@ -260,12 +262,27 @@ export using std::iota;
 export using std::make_heap;
 export using std::memcpy;
 export using std::mismatch;
+export using std::reduce;
 export using std::reverse;
 export using std::rotate;
 export using std::search;
 export using std::shuffle;
 export using std::sort;
 export using std::sort_heap;
+
+namespace execution {
+
+export using std::execution::parallel_policy;
+export using std::execution::parallel_unsequenced_policy;
+export using std::execution::sequenced_policy;
+export using std::execution::unsequenced_policy;
+
+export using std::execution::par;
+export using std::execution::par_unseq;
+export using std::execution::seq;
+export using std::execution::unseq;
+
+} // namespace execution
 
 namespace ranges {
 
