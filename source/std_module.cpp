@@ -326,16 +326,12 @@ export using std::uniform_real_distribution;
 export using std::atomic;
 export using std::atomic_flag;
 export using std::condition_variable_any;
-#ifndef _LIBCPP_VERSION
 export using std::jthread;
-#endif
 export using std::memory_order;
 export using std::mutex;
 export using std::unique_lock;
 export using std::scoped_lock;
-#ifndef _LIBCPP_VERSION
 export using std::stop_token;
-#endif
 export using std::try_to_lock;
 
 namespace this_thread {
@@ -390,12 +386,25 @@ export using std::operator>>;
 
 } // namespace std
 
-#ifdef __GLIBCXX__
+#if defined __GLIBCXX__
 namespace __gnu_cxx {
 
 export using __gnu_cxx::operator-;
 export using __gnu_cxx::operator==;
 
 } // namespace __gnu_cxx
+
+#elif defined _LIBCPP_VERSION
+
+_LIBCPP_BEGIN_NAMESPACE_STD
+
+export using std::operator==;
+export using std::operator!=;
+export using std::operator<;
+export using std::operator>;
+export using std::operator<=;
+export using std::operator>=;
+
+_LIBCPP_END_NAMESPACE_STD
 
 #endif
