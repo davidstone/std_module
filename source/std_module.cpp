@@ -270,6 +270,8 @@ export using std::shuffle;
 export using std::sort;
 export using std::sort_heap;
 
+export using std::pointer_traits;
+
 namespace execution {
 
 export using std::execution::parallel_policy;
