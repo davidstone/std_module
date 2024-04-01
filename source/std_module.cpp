@@ -219,8 +219,12 @@ export using std::make_reverse_iterator;
 export using std::default_sentinel_t;
 export using std::default_sentinel;
 
+#if defined __cpp_lib_containers_ranges
+
 export using std::from_range;
 export using std::from_range_t;
+
+#endif
 
 export using std::allocator;
 
