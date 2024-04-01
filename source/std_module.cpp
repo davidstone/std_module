@@ -219,6 +219,9 @@ export using std::make_reverse_iterator;
 export using std::default_sentinel_t;
 export using std::default_sentinel;
 
+export using std::from_range;
+export using std::from_range_t;
+
 export using std::allocator;
 
 export using std::array;
