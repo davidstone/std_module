@@ -393,6 +393,7 @@ namespace __gnu_cxx {
 
 export using __gnu_cxx::operator-;
 export using __gnu_cxx::operator==;
+export using __gnu_cxx::operator<=>;
 
 } // namespace __gnu_cxx
 
@@ -402,6 +403,7 @@ _LIBCPP_BEGIN_NAMESPACE_STD
 
 export using std::operator==;
 export using std::operator!=;
+export using std::operator<=>;
 export using std::operator<;
 export using std::operator>;
 export using std::operator<=;
