@@ -24,6 +24,7 @@ module;
 #include <algorithm>
 #include <bit>
 #include <chrono>
+#include <compare>
 #include <concepts>
 #include <condition_variable>
 #include <execution>
@@ -165,6 +166,8 @@ export using std::move_constructible;
 export using std::same_as;
 export using std::signed_integral;
 export using std::unsigned_integral;
+
+export using std::three_way_comparable;
 
 export using std::abs;
 export using std::isfinite;
