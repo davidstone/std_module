@@ -72,6 +72,8 @@ export using std::uintmax_t;
 
 export using std::strong_ordering;
 
+export using std::endian;
+
 export using std::bit_and;
 export using std::divides;
 export using std::minus;
