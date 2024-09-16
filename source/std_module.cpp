@@ -276,6 +276,7 @@ export using std::shuffle;
 export using std::sort;
 export using std::sort_heap;
 
+export using std::char_traits;
 export using std::pointer_traits;
 
 namespace execution {
