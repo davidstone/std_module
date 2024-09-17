@@ -193,6 +193,7 @@ export using std::isspace;
 export using std::make_unique;
 export using std::max;
 export using std::monostate;
+export using std::move_only_function;
 export using std::numeric_limits;
 export using std::nullptr_t;
 export using std::ref;
@@ -396,6 +397,7 @@ export using std::operator>>;
 } // namespace std
 
 #if defined __GLIBCXX__
+
 namespace __gnu_cxx {
 
 export using __gnu_cxx::operator-;
