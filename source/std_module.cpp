@@ -81,6 +81,8 @@ export using std::modulus;
 export using std::multiplies;
 export using std::plus;
 
+export using std::identity;
+
 export using std::not_fn;
 
 export using std::equal_to;
