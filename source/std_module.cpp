@@ -72,6 +72,13 @@ export using std::uintmax_t;
 
 export using std::strong_ordering;
 
+export using std::in_place_t;
+export using std::in_place;
+export using std::in_place_type_t;
+export using std::in_place_type;
+export using std::in_place_index_t;
+export using std::in_place_index;
+
 export using std::endian;
 
 export using std::bit_and;
