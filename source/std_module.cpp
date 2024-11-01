@@ -350,6 +350,7 @@ export using std::memory_order;
 export using std::mutex;
 export using std::unique_lock;
 export using std::scoped_lock;
+export using std::stop_source;
 export using std::stop_token;
 export using std::try_to_lock;
 
