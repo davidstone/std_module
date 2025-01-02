@@ -135,6 +135,8 @@ export using std::is_copy_constructible_v;
 export using std::is_default_constructible_v;
 export using std::is_empty_v;
 export using std::is_function_v;
+export using std::is_member_function_pointer_v;
+export using std::is_member_object_pointer_v;
 export using std::is_move_assignable_v;
 export using std::is_move_constructible_v;
 export using std::is_nothrow_constructible_v;
