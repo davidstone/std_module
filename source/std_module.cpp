@@ -171,6 +171,7 @@ export using std::remove_pointer_t;
 export using std::underlying_type_t;
 
 export using std::copy_constructible;
+export using std::destructible;
 export using std::derived_from;
 export using std::floating_point;
 export using std::integral;
