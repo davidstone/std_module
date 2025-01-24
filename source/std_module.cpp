@@ -206,7 +206,9 @@ export using std::isspace;
 export using std::make_unique;
 export using std::max;
 export using std::monostate;
+#ifdef __cpp_lib_move_only_function
 export using std::move_only_function;
+#endif
 export using std::numeric_limits;
 export using std::nullptr_t;
 export using std::ref;
