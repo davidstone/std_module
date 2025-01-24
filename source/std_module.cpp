@@ -198,6 +198,7 @@ export using std::byte;
 export using std::construct_at;
 export using std::denorm_absent;
 export using std::destroy_at;
+export using std::function;
 export using std::getenv;
 export using std::hash;
 export using std::invoke;
