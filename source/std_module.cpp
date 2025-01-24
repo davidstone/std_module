@@ -194,6 +194,7 @@ export using std::sqrt;
 export using std::addressof;
 export using std::as_const;
 export using std::bit_cast;
+export using std::bit_width;
 export using std::byte;
 export using std::construct_at;
 export using std::denorm_absent;
