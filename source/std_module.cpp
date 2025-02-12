@@ -285,6 +285,7 @@ export using std::iota;
 export using std::make_heap;
 export using std::memcpy;
 export using std::mismatch;
+export using std::next_permutation;
 export using std::reduce;
 export using std::reverse;
 export using std::rotate;
