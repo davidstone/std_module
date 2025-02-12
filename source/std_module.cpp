@@ -215,6 +215,7 @@ export using std::nullptr_t;
 export using std::ref;
 export using std::reference_wrapper;
 export using std::round_toward_zero;
+export using std::shared_ptr;
 export using std::to_underlying;
 export using std::unique_ptr;
 export using std::unreachable;
