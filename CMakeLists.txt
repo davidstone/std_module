@@ -31,9 +31,3 @@ target_sources(std_module PUBLIC
 	FILES
 		source/std_module.cpp
 )
-
-# Until the clang bugs are fixed that require includes in a particular order
-target_include_directories(std_module PUBLIC
-	$<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
-	$<INSTALL_INTERFACE:include>
-)

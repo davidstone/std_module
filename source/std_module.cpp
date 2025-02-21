@@ -8,8 +8,6 @@ module;
 // There are several clang bugs in including standard library headers. Do this
 // to work around them and improve compile times until we get `import std;`
 
-#include <std_module/prelude.hpp>
-
 #include <cmath>
 #include <cstdlib>
 #include <cstring>
