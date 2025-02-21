@@ -5,9 +5,6 @@
 
 module;
 
-// There are several clang bugs in including standard library headers. Do this
-// to work around them and improve compile times until we get `import std;`
-
 #include <cmath>
 #include <cstdlib>
 #include <cstring>
@@ -240,6 +237,9 @@ export using std::reverse_iterator;
 export using std::make_reverse_iterator;
 export using std::default_sentinel_t;
 export using std::default_sentinel;
+export using std::from_range;
+export using std::from_range_t;
+
 
 export using std::allocator;
 
@@ -407,9 +407,19 @@ export using std::locale;
 
 export using std::operator+;
 export using std::operator-;
+export using std::operator&;
 export using std::operator|;
+export using std::operator^;
 export using std::operator<<;
 export using std::operator>>;
+
+export using std::operator==;
+export using std::operator!=;
+export using std::operator<=>;
+export using std::operator<;
+export using std::operator>;
+export using std::operator<=;
+export using std::operator>=;
 
 } // namespace std
 
@@ -422,22 +432,5 @@ export using __gnu_cxx::operator==;
 export using __gnu_cxx::operator<=>;
 
 } // namespace __gnu_cxx
-
-#elif defined _LIBCPP_VERSION
-
-_LIBCPP_BEGIN_NAMESPACE_STD
-
-export using std::operator==;
-export using std::operator!=;
-export using std::operator<=>;
-export using std::operator<;
-export using std::operator>;
-export using std::operator<=;
-export using std::operator>=;
-
-export using std::from_range;
-export using std::from_range_t;
-
-_LIBCPP_END_NAMESPACE_STD
 
 #endif
