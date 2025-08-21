@@ -9,25 +9,22 @@ module;
 #include <cstdlib>
 #include <cstring>
 
-#include <array>
-#include <deque>
-#include <forward_list>
-#include <list>
-#include <string>
-#include <vector>
-
 #include <algorithm>
+#include <array>
 #include <bit>
 #include <chrono>
 #include <compare>
 #include <concepts>
 #include <condition_variable>
+#include <deque>
 #include <execution>
 #include <filesystem>
+#include <forward_list>
 #include <fstream>
 #include <functional>
 #include <iostream>
 #include <iterator>
+#include <list>
 #include <locale>
 #include <map>
 #include <memory>
@@ -38,6 +35,7 @@ module;
 #include <set>
 #include <stdexcept>
 #include <sstream>
+#include <string>
 #include <string_view>
 #include <thread>
 #include <tuple>
@@ -46,6 +44,8 @@ module;
 #include <unordered_set>
 #include <utility>
 #include <variant>
+#include <vector>
+#include <version>
 
 export module std_module;
 
@@ -420,6 +420,21 @@ export using std::operator<;
 export using std::operator>;
 export using std::operator<=;
 export using std::operator>=;
+
+#ifdef __cpp_lib_trivially_relocatable
+	export using std::is_replaceable_v;
+#else
+	#ifndef __has_builtin
+		#define __has_builtin(x) false
+	#endif
+	#if __has_builtin(__builtin_is_replaceable)
+		export template<typename T>
+		constexpr auto is_replaceable_v = __builtin_is_replaceable(T);
+	#else
+		export template<typename T>
+		constexpr auto is_replaceable_v = false;
+	#endif
+#endif
 
 } // namespace std
 
