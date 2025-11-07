@@ -279,6 +279,7 @@ export using std::stoull;
 export using std::to_string;
 
 export using std::compare_three_way;
+export using std::compare_three_way_result_t;
 export using std::inplace_merge;
 export using std::iota;
 export using std::make_heap;
