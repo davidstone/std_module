@@ -146,7 +146,6 @@ export using std::is_pointer_v;
 export using std::is_reference_v;
 export using std::is_rvalue_reference_v;
 export using std::is_standard_layout_v;
-export using std::is_trivial_v;
 export using std::is_trivially_copy_assignable_v;
 export using std::is_trivially_copy_constructible_v;
 export using std::is_trivially_copyable_v;
