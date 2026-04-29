@@ -108,9 +108,9 @@ export using std::make_integer_sequence;
 export using std::index_sequence;
 export using std::make_index_sequence;
 
-export using std::add_const_t;
+export using std::add_lvalue_reference_t;
+export using std::add_rvalue_reference_t;
 export using std::add_pointer_t;
-export using std::add_volatile_t;
 export using std::common_type;
 export using std::common_type_t;
 export using std::conditional_t;
