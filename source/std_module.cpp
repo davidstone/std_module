@@ -232,6 +232,8 @@ export using std::input_iterator_tag;
 export using std::forward_iterator_tag;
 export using std::bidirectional_iterator_tag;
 export using std::random_access_iterator_tag;
+export using std::contiguous_iterator_tag;
+export using std::iterator_traits;
 export using std::reverse_iterator;
 export using std::make_reverse_iterator;
 export using std::default_sentinel_t;
