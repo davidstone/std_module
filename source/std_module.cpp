@@ -375,6 +375,7 @@ export using std::this_thread::yield;
 
 namespace filesystem {
 
+export using std::filesystem::absolute;
 export using std::filesystem::create_directory;
 export using std::filesystem::create_directories;
 export using std::filesystem::directory_entry;
