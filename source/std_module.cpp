@@ -394,6 +394,7 @@ export using std::filesystem::temp_directory_path;
 } // namespace filesystem
 
 export using std::format;
+export using std::formatter;
 export using std::print;
 export using std::println;
 
