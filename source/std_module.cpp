@@ -31,6 +31,7 @@ module;
 #include <memory>
 #include <mutex>
 #include <numeric>
+#include <print>
 #include <random>
 #include <ranges>
 #include <set>
@@ -390,6 +391,8 @@ export using std::filesystem::temp_directory_path;
 } // namespace filesystem
 
 export using std::format;
+export using std::print;
+export using std::println;
 
 export using std::basic_istream;
 export using std::basic_ostream;
