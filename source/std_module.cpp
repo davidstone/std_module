@@ -378,6 +378,7 @@ export using std::this_thread::yield;
 namespace filesystem {
 
 export using std::filesystem::absolute;
+export using std::filesystem::canonical;
 export using std::filesystem::create_directory;
 export using std::filesystem::create_directories;
 export using std::filesystem::directory_entry;
@@ -390,6 +391,7 @@ export using std::filesystem::recursive_directory_iterator;
 export using std::filesystem::remove;
 export using std::filesystem::remove_all;
 export using std::filesystem::temp_directory_path;
+export using std::filesystem::weakly_canonical;
 
 } // namespace filesystem
 
