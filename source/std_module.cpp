@@ -446,3 +446,15 @@ export using std::operator>=;
 #endif
 
 } // namespace std
+
+#if _GLIBCXX_RELEASE < 16
+
+namespace __gnu_cxx {
+
+export using __gnu_cxx::operator-;
+export using __gnu_cxx::operator==;
+export using __gnu_cxx::operator<=>;
+
+} // namespace __gnu_cxx
+
+#endif
