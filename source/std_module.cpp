@@ -19,6 +19,7 @@ module;
 #include <deque>
 #include <execution>
 #include <filesystem>
+#include <format>
 #include <forward_list>
 #include <fstream>
 #include <functional>
@@ -387,6 +388,8 @@ export using std::filesystem::remove_all;
 export using std::filesystem::temp_directory_path;
 
 } // namespace filesystem
+
+export using std::format;
 
 export using std::basic_istream;
 export using std::basic_ostream;
