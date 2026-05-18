@@ -300,6 +300,8 @@ export using std::sort_heap;
 export using std::char_traits;
 export using std::pointer_traits;
 
+export using std::system;
+
 namespace execution {
 
 export using std::execution::parallel_policy;
