@@ -386,6 +386,7 @@ export using std::filesystem::directory_entry;
 export using std::filesystem::directory_iterator;
 export using std::filesystem::exists;
 export using std::filesystem::file_size;
+export using std::filesystem::file_time_type;
 export using std::filesystem::is_directory;
 export using std::filesystem::last_write_time;
 export using std::filesystem::path;
