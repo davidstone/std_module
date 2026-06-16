@@ -345,6 +345,7 @@ export using std::chrono::system_clock;
 export using std::chrono::time_point;
 export using std::chrono::operator+;
 export using std::chrono::operator-;
+export using std::chrono::operator==;
 
 } // namespace chrono
 
