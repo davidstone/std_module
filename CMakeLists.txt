@@ -19,8 +19,6 @@ endif()
 add_library(std_module STATIC)
 
 target_link_libraries(std_module
-	PUBLIC
-		strict_defaults_interface
 	PRIVATE
 		strict_defaults
 )
