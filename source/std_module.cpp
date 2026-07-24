@@ -422,6 +422,7 @@ export using std::streamsize;
 export using std::stringstream;
 export using std::ofstream;
 export using std::ostream;
+export using std::streamoff;
 
 export using std::locale;
 
