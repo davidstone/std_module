@@ -34,6 +34,7 @@ module;
 #include <print>
 #include <random>
 #include <ranges>
+#include <regex>
 #include <set>
 #include <stdexcept>
 #include <sstream>
@@ -301,6 +302,11 @@ export using std::char_traits;
 export using std::pointer_traits;
 
 export using std::system;
+
+export using std::regex;
+export using std::regex_match;
+export using std::cmatch;
+export using std::csub_match;
 
 namespace execution {
 
