@@ -408,7 +408,11 @@ export using std::filesystem::weakly_canonical;
 } // namespace filesystem
 
 export using std::format;
+export using std::format_to;
 export using std::formatter;
+export using std::format_context;
+export using std::format_parse_context;
+export using std::format_error;
 export using std::print;
 export using std::println;
 
