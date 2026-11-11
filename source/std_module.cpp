@@ -409,13 +409,15 @@ export using std::filesystem::weakly_canonical;
 
 export using std::format;
 export using std::format_to;
+export using std::format_context;
+export using std::format_error;
+export using std::format_kind;
+export using std::format_parse_context;
 export using std::formattable;
 export using std::formatter;
-export using std::format_context;
-export using std::format_parse_context;
-export using std::format_error;
 export using std::print;
 export using std::println;
+export using std::range_format;
 export using std::range_formatter;
 
 export using std::basic_istream;
