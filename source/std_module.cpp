@@ -354,6 +354,7 @@ export using std::chrono::operator+;
 export using std::chrono::operator-;
 export using std::chrono::operator==;
 export using std::chrono::operator<=>;
+export using std::chrono::operator<<;
 
 } // namespace chrono
 
