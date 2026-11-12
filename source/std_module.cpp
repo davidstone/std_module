@@ -11,6 +11,7 @@ module;
 
 #include <algorithm>
 #include <array>
+#include <atomic>
 #include <bit>
 #include <chrono>
 #include <compare>
