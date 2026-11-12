@@ -402,6 +402,7 @@ export using std::filesystem::recursive_directory_iterator;
 export using std::filesystem::remove;
 export using std::filesystem::remove_all;
 export using std::filesystem::rename;
+export using std::filesystem::resize_file;
 export using std::filesystem::temp_directory_path;
 export using std::filesystem::weakly_canonical;
 
