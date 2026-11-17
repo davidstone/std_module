@@ -272,9 +272,21 @@ export using std::as_bytes;
 export using std::as_writable_bytes;
 
 inline namespace literals {
-export inline namespace string_view_literals {
+inline namespace chrono_literals {
 
-using std::literals::string_view_literals::operator""sv;
+export using std::literals::chrono_literals::operator""d;
+export using std::literals::chrono_literals::operator""h;
+export using std::literals::chrono_literals::operator""min;
+export using std::literals::chrono_literals::operator""ms;
+export using std::literals::chrono_literals::operator""ns;
+export using std::literals::chrono_literals::operator""s;
+export using std::literals::chrono_literals::operator""us;
+export using std::literals::chrono_literals::operator""y;
+
+} // namespace chrono_literals
+inline namespace string_view_literals {
+
+export using std::literals::string_view_literals::operator""sv;
 
 } // namespace string_view_literals
 } // namespace literals
